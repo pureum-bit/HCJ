@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style6.css" />
+    <title>회원가입 폼</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>회원가입</h2>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="userName">이름:</label>
+          <input type="text" id="userName" name="userName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="userEmail">이메일:</label>
+          <input type="email" id="userEmail" name="userEmail" required />
+        </div>
+
+        <div class="form-group">
+          <label for="userAge">나이:</label>
+          <input type="number" id="userAge" name="userAge" min="1" max="120" />
+        </div>
+
+        <div class="form-group">
+          <label>성별:</label>
+          <input type="radio" id="male" name="gender" value="남성" />
+          <label for="male" style="display: inline; margin-left: 5px"
+            >남성</label
+          >
+          <input type="radio" id="female" name="gender" value="여성" />
+          <label for="female" style="display: inline; margin-left: 5px"
+            >여성</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="userCity">거주지역:</label>
+          <select id="userCity" name="userCity">
+            <option value="">선택해주세요</option>
+            <option value="서울">서울</option>
+            <option value="부산">부산</option>
+            <option value="대구">대구</option>
+            <option value="인천">인천</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="agree" name="agree" />
+          <label for="agree" style="display: inline; margin-left: 5px"
+            >개인정보 처리방침에 동의합니다</label
+          >
+        </div>
+        <button type="button" onclick="processForm()">가입하기</button>
+      </form>
+
+      <div id="result" class="result" style="display: none"></div>
+    </div>
+
+    <script src="./js/test6.js"></script>
+  </body>
+</html>
+
+<!--  로그인  -->
+<!-- <div class="container">
+      <button id="clickbtn">클릭 이벤트</button>
+      <button id="hoverBtn">마우스를 올리세요</button>
+      <input type="text" id="textInput" placeholder="여기에 입력하세요" />
+      <div id="result">결과 표시 영역</div>
+    </div> -->
+
+<!-- 이벤트 프로그래밍 -->
+<!-- <button id="myButton">클릭해보세요</button>
+    <p id="message">여기에 메세지가 나타납니다.</p> -->
+
+<!-- 카드선택 및 초기화 -->
+<!-- <h2>카드를 선택해보세요</h2>
+    <div id="card1" class="card">게임 카드</div>
+    <div id="card2" class="card">음악 카드</div>
+    <div id="card3" class="card">도서 카드</div>
+    <p id="status">선택된 카드: 없음</p>
+    <button id="reset-btn">선택 초기화</button> -->
+
+<!-- 리엑트 방법 -->
+<!-- <div id="box1" class="box">첫 번째 박스</div>
+    <div id="box2" class="box">두 번째 박스</div>
+    <div id="box3" class="box">세 번째 박스</div>
+    <button id="highlight-btn">모든 박스 강조하기</button> -->
+
+<!-- 장바구니 기능 -->
+<!-- <div style="text-align: center; margin-top: 50px">
+      <h1>장바구니</h1>
+      <h3 style="margin-top: -20px">욥욥욥~ 에~//오~~데!!엠 걸~~</h3>
+      <p>상품 개수 : <span id="count">0</span></p>
+      <button onclick="addItem()">상품 추가</button>
+      <button onclick="removeItem()">상품 제거</button>
+      <button onclick="reseCart()">장바구니 비우기</button>
+      <div id="status" style="margin-top: 20px; font-weight: bold"></div>
+    </div> -->
+
+<!-- 변경을 눌렀을때 인천을 제주도로 변경 -->
+<!-- <h1>김푸름</h1>
+  <p id="add">인천</p>
+  <button onclick="changeText()">변경</button>
+  <button id="aa">변경</button> -->
